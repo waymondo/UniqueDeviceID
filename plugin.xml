@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-uniquedeviceid" 
-        version="1.3.1">
+        id="cordova-plugin-uniquedeviceid-waymondo"
+        version="1.3.3">
 
     <name>UniqueDeviceID</name>
 
@@ -12,7 +12,7 @@
     </description>
     <license>MIT</license>
     <keywords>phonegap,cordova,android,ios,wp,Windows,phone,device,id,uuid,unique</keywords>
-
+    <repo>https://github.com/waymondo/UniqueDeviceID.git</repo>
     <js-module src="www/uniqueid.js" name="UniqueDeviceID">
         <merges target="window.plugins.uniqueDeviceID" />
     </js-module>
@@ -37,7 +37,7 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        
+
         <header-file src="src/ios/UICKeyChainStore.h" />
         <source-file src="src/ios/UICKeyChainStore.m" />
 
@@ -64,4 +64,3 @@
     </platform>
 
 </plugin>
-
